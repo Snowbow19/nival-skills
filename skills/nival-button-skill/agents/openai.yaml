@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nival Button Skill"
+  short_description: "Design buttons with contextual color and working previews"
+  default_prompt: "Use $nival-button-skill to design a button with true-size and enlarged HTML previews."

@@ -40,4 +40,4 @@ The recorded checks covered rendering, the main animation triggered by keyboard 
 
 ## Transferable Result
 
-The useful method is to clarify meaning, provide a working preview at two scales, make bounded revisions, preserve accepted choices, and verify authorized integration. A different component may need different states, no icon, no animation, and an entirely different visual style.
+The useful method is to clarify meaning, provide a working preview at two scales, make bounded revisions, preserve accepted choices, and verify authorized integration. A different button may need different states, no icon, no animation, and an entirely different visual style.

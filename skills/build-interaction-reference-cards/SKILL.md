@@ -1,6 +1,6 @@
 ---
 name: build-interaction-reference-cards
-description: Use when the user wants an instructional card that combines a working interaction example, terminology, a reusable AI instruction, and appropriate use cases. Applies to interaction reference cards, not general UI component redesign.
+description: Use when the user wants an instructional card that combines a working interaction example, terminology, a reusable AI instruction, and appropriate use cases. Applies to interaction reference cards, not standalone button design.
 ---
 
 # Build Interaction Reference Cards

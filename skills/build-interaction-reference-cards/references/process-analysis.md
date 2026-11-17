@@ -1,6 +1,6 @@
 # Scope and Process Analysis
 
-Scope: interaction reference cards that combine an operable example, terminology, an AI instruction, and use cases. General component design is a separate skill.
+Scope: interaction reference cards that combine an operable example, terminology, an AI instruction, and use cases. Button design is handled by Nival Button Skill.
 
 ## INVARIANT
 
@@ -43,4 +43,4 @@ These facts belong to the example, not general rules.
 
 ## Limits
 
-The two alternative cards are reasoned examples only. They were not implemented or interaction-tested for this draft. This skill is separate from general UI component design.
+The two alternative cards are reasoned examples only. They were not implemented or interaction-tested for this draft. This skill is separate from Nival Button Skill.

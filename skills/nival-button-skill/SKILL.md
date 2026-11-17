@@ -1,22 +1,22 @@
 ---
-name: design-ui-components
-description: Use when a user wants to design or refine a UI component, its visual states, or its interactions through a working preview and feedback. Applies to controls, cards, inputs, menus, and other components in any visual style.
+name: nival-button-skill
+description: Design or refine buttons and button-like navigation links through working previews and feedback. Covers appearance, icons, hover motion, interaction states, and page-specific color calibration. Use for button design, not whole cards, forms, or menus.
 ---
 
-# Design UI Components
+# Nival Button Skill
 
-Develop the component with the user. Preserve accepted choices while refining the parts they change. No particular color, icon, layout, or motion style is required.
+Develop the button with the user. Preserve accepted choices while refining the parts they change. No particular color, icon, layout, or motion style is required.
 
 ## Inputs
 
 Read the current request, relevant feedback, reference images, and existing product files first. Determine:
 
-- Purpose: component type, user action, and expected result.
+- Purpose: button purpose, user action, and expected result.
 - Context: placement, neighboring elements, target devices, and edit boundaries.
 - Appearance: style, brand rules, copy, icons if needed, and visual hierarchy.
 - Geometry: container constraints, relative sizes, spacing, and alignment.
 - Behavior: applicable states, input methods, transitions, and recovery.
-- Delivery: exploration, preview, existing-component edit, or product integration.
+- Delivery: exploration, preview, existing-button edit, or product integration.
 
 Ask only for missing information that would materially change the design. Treat an inferred choice as a proposal, not as a confirmed preference. When feedback changes a choice, use the latest explicit direction.
 
@@ -26,18 +26,18 @@ When a style feeling has several plausible meanings, use [Style and color calibr
 
 ## Flow
 
-1. **Understand the component.** Identify what it does and what must remain unchanged. Distinguish visual exploration from a functional change.
-2. **Define applicable states.** Map each relevant trigger to its visible result and recovery. A link needs a destination; a toggle needs a value; an input needs editing behavior; a menu needs opening, selection, and dismissal. A static card may need no interaction.
-3. **Build an HTML preview.** By default, include a true-size view and an enlarged detail view. Include nearby product context when available. Use one component implementation and the same state logic in both views; enlarge its presentation instead of maintaining a separate design. Keep independent instances accessible, with unique IDs.
+1. **Understand the button.** Identify what it does and what must remain unchanged. Distinguish visual exploration from a functional change.
+2. **Define applicable states.** Map each relevant trigger to its visible result and recovery. An action button needs an observable result; a navigation link needs a destination; a toggle button needs a value; a disclosure button needs an expanded state and a controlled target. Preserve native button or link semantics. Do not redesign the target page or panel unless requested.
+3. **Build an HTML preview.** By default, include a true-size view and an enlarged detail view. Include nearby product context when available. Use one button implementation and the same state logic in both views; enlarge its presentation instead of maintaining a separate design. Keep independent instances accessible, with unique IDs.
 4. **Review in context.** Check readability, proportions, meaning, layout, and applicable interactions at actual size. Use the enlarged view to inspect details, not to judge touch-target size or overall balance.
 5. **Iterate from feedback.** Change the requested property or related group. Preserve other accepted choices. Explain the change briefly in chat and keep the preview current. Continue routine edits without a formal approval gate after each action. Ask when feedback has materially different interpretations.
-6. **Verify and deliver.** Run the applicable checks below. Integrate only within the authorized scope, using the accepted design. Existing authorization remains valid. Check the component again in its real product environment; preview success alone does not prove integration success.
+6. **Verify and deliver.** Run the applicable checks below. Integrate only within the authorized scope, using the accepted design. Existing authorization remains valid. Check the button again in its real product environment; preview success alone does not prove integration success.
 
-Keep visible UI copy suitable for a finished product. Put design reasoning, review instructions, simulated behavior, and verification limits in chat, not in the component.
+Keep visible UI copy suitable for a finished product. Put design reasoning, review instructions, simulated behavior, and verification limits in chat, not in the button.
 
 ## Decision Rules
 
-- When editing an existing product, prefer its established conventions because the component must work with its surroundings. When the user requests a new style, use that direction instead.
+- When editing an existing product, prefer its established conventions because the button must work with its surroundings. When the user requests a new style, use that direction instead.
 - When behavior affects the judgment, prefer an interactive preview because an image cannot show triggers, transitions, or recovery.
 - When an icon is misread, prefer correcting its silhouette and structure because decoration cannot repair the wrong meaning. Icons are optional.
 - When size or spacing feels wrong, prefer comparing related elements at actual size because nominal CSS dimensions may not match visible bounds.
@@ -51,7 +51,7 @@ Keep visible UI copy suitable for a finished product. Put design reasoning, revi
 
 Check each relevant item. Mark a state not applicable when the behavior does not require it.
 
-- Meaning: labels, icons, semantics, and action results agree.
+- Meaning: labels, icons, semantics, and action results agree. Use a button for actions and a link for navigation; set the button type deliberately inside forms.
 - Geometry: readable at actual size; intended hierarchy and alignment; no unintended overlap, clipping, or layout shift, including with long content and narrow containers.
 - States: default, hover, focus, pressed, selected, expanded, disabled, loading, error, and success as applicable. Check entry, exit, repeated use, and recovery.
 - Accessibility: suitable native semantics, accessible names and state values, logical focus order, visible focus, applicable keyboard behavior, and usable target sizes. Do not rely on color alone.

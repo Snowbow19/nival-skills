@@ -1,15 +1,15 @@
 # Nival Skills
 
-用于 UI 组件设计与交互式知识卡片制作的 Agent Skills。通过可运行的预览和反馈迭代，把设计方法变成可复用流程。
+用于 按钮设计与交互式知识卡片制作的 Agent Skills。通过可运行的预览和反馈迭代，把设计方法变成可复用流程。
 
 ## Skills
 
 | Skill | 用途 | 主要产出 |
 | --- | --- | --- |
-| [design-ui-components](skills/design-ui-components/SKILL.md) | 设计、改进按钮、开关、卡片、输入框与菜单；结合页面校准颜色、尺寸和状态 | 真实尺寸与放大细节的 HTML 预览、可编辑源码 |
+| [Nival Button Skill](skills/nival-button-skill/SKILL.md) | 设计、改进操作按钮与导航按钮；结合页面校准颜色、尺寸和状态 | 真实尺寸与放大细节的 HTML 预览、可编辑源码 |
 | [build-interaction-reference-cards](skills/build-interaction-reference-cards/SKILL.md) | 把一个交互知识点整理成可体验的教学卡片 | 互动示例、术语、AI 指令、代表性使用场景 |
 
-两者可以独立使用。前者关注组件本身；后者关注如何用卡片教会读者一种交互。没有固定配色、图标或场景，具体作品只出现在独立示例文件中。
+两者可以独立使用。前者专注按钮的外观、动效与状态；后者关注如何用卡片教会读者一种交互。没有固定配色、图标或场景，具体作品只出现在独立示例文件中。
 
 ## 安装
 
@@ -27,10 +27,10 @@ Codex 的默认个人技能目录是 `~/.codex/skills/`。如果已经存在同�
 
 ## 使用
 
-组件设计：
+按钮设计：
 
 ```text
-使用 $design-ui-components，给这个页面设计一个开关。
+使用 $nival-button-skill，给这个页面设计一个带悬停动效的按钮。
 先查看页面的背景、字体和相邻控件，提供真实尺寸和放大细节的 HTML 预览。
 ```
 
@@ -45,8 +45,8 @@ Codex 的默认个人技能目录是 `~/.codex/skills/`。如果已经存在同�
 
 ## 示例
 
-- [书架导航交互](skills/design-ui-components/references/example-bookshelf.md)
-- [页面配色校准](skills/design-ui-components/references/example-portfolio-colors.md)
+- [书架导航交互](skills/nival-button-skill/references/example-bookshelf.md)
+- [页面配色校准](skills/nival-button-skill/references/example-portfolio-colors.md)
 - [手形指针、拖拽排序与行内校验卡片](skills/build-interaction-reference-cards/references/examples.md)
 - [作品预览](https://nivalslibrary.com/portfolio)
 
@@ -54,7 +54,7 @@ Codex 的默认个人技能目录是 `~/.codex/skills/`。如果已经存在同�
 
 ## 内容来源
 
-技能方法来自 Nival 的组件与交互知识卡片设计实践。指针卡片示例的选题参考 [Adrian Punk 的鼠标指针文章](https://x.com/AdrianPunk115/status/2121882167290814692)。本仓库收录方法说明，不分发文章正文、系统指针资源或网站素材。
+技能方法来自 Nival 的按钮与交互知识卡片设计实践。指针卡片示例的选题参考 [Adrian Punk 的鼠标指针文章](https://x.com/AdrianPunk115/status/2121882167290814692)。本仓库收录方法说明，不分发文章正文、系统指针资源或网站素材。
 
 ## 版本记录
 
