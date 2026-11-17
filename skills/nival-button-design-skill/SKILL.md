@@ -1,9 +1,9 @@
 ---
-name: nival-button-skill
+name: nival-button-design-skill
 description: Design or refine buttons and button-like navigation links through working previews and feedback. Covers appearance, icons, hover motion, interaction states, and page-specific color calibration. Use for button design, not whole cards, forms, or menus.
 ---
 
-# Nival Button Skill
+# Nival Button Design Skill
 
 Develop the button with the user. Preserve accepted choices while refining the parts they change. No particular color, icon, layout, or motion style is required.
 
